@@ -128,7 +128,9 @@ def jeu():
                 break
             else:
                 print('\033[2K')
-        print('\n\033cScore : %s%%' % (int(len(mots_trouves)/len(mots)*10000)/100))
+        print('\n\033c')
+        affgrille(gr)
+        print('\nScore : %s%%' % (int(len(mots_trouves)/len(mots)*10000)/100))
         print('\nMots trouves :')
         mots_trouves.sort()
         for mot in mots_trouves:
