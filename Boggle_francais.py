@@ -1,8 +1,10 @@
 from random import randint
 import time
+import sys
 
+path = sys.argv[1]
 motsfrancais = []
-file = open('repertoire_francais_tout.txt','r')
+file = open(path,'r')
 for ligne in file:
     motsfrancais.append(ligne.strip(' \n'))
 for mot in motsfrancais:
